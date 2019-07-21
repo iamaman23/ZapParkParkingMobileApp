@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>vendorhome</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<h1>{{placeDetails.name}}</h1>
+<ion-list>
+    <ion-item>
+        Availability
+        <ion-note item-end>
+          {{placeDetails.status}}
+        </ion-note>
+      </ion-item>
+    <ion-item>
+      Maximum Space
+      <ion-note item-end>
+        {{placeDetails.totalSpaces}}
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      Parking Spots
+      <ion-note item-end>
+        {{placeDetails.spots}}
+      </ion-note>
+    </ion-item>
+  </ion-list>
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+              <button ion-button color="secondary" outline left block (click)="carIn()">Car In</button>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+              <button ion-button color="danger" outline right block (click)="carOut()">Car Out</button>
+          </div>
+        </ion-col>
+      </ion-row>
+      </ion-grid>
+</ion-content>

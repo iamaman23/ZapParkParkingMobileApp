@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar color="dg">
+    <ion-title>{{details.name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="grid-basic-page">
+    <div #map id="map" (click)="navigate()"></div>
+<ion-list>
+  <ion-item>
+    <h1>{{details.name}}</h1>
+  </ion-item>
+  <ion-item>
+    Parking Space
+    <ion-note item-end>
+      {{details.status}}
+    </ion-note>
+  </ion-item>
+  <ion-item>
+    Parking Spots
+    <ion-note item-end>
+      {{details.spots}}
+    </ion-note>
+  </ion-item>
+  <ion-item>
+    Price
+    <ion-note item-end>
+      {{details.price}}
+    </ion-note>
+  </ion-item>
+<button ion-button block color="dark" (click)="move()">Book</button>
+</ion-list>
+</ion-content>

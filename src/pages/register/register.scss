@@ -1,0 +1,36 @@
+page-register {
+    .register {
+        background-image: url(../../assets/imgs/zappark.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 160px;
+        margin-top: 30px;
+        position: inherit;
+    }
+    .second{
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #item {
+        border-radius: 100px !important;
+        padding-left: 30px !important;
+        font-size: 0.9em;
+        border: 0.5px solid darkgray !important;
+        box-shadow: none !important;
+        color: #b7b8bb !important;
+        width: auto !important;
+    }
+    .third{
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        width: auto !important;
+    }
+    h6{
+        color: darkgray;
+        text-decoration: underline;
+        text-align: center;
+    }
+}
